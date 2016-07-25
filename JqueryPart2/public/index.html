@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="bootstrap-glyphicons.css" rel="stylesheet"> -->
+    <script src="scripts/modernizr-2.6.2.min.js"></script>
+    <!-- <link href="includes/css/font-awesome.min.css" rel="stylesheet"> -->
+    
+	
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- modal content -->
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Employee Details</h4>
+      </div>
+      
+      <div class="modal-body">
+        <form class="form-horizontal">
+         
+         <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputName">Name</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputName" placeholder="Name" type="text">
+            </div>
+          </div>
+        
+         <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputAge">Age</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputAge" placeholder="Age" type="number">
+            </div>
+         </div>
+            
+          <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputGender">Gender</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputGender" placeholder="Gender" type="text">
+            </div>
+          </div>
+        
+         <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputCompany">Company</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputCompany" placeholder="Company name" type="text">
+            </div>
+         </div>
+
+           <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+            </div>
+          </div>
+        
+         <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputPhone">Phone</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputPhone" placeholder="Phone" type="text">
+            </div>
+         </div>                        
+         
+         <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputDate">DOB</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputDate" type="date">
+            </div>
+         </div>
+        
+    </form>
+      </div>
+      <div class="modal-footer">
+        <button class="default pull-left" id="sendbtn" type="submit" data-dismiss="modal"><b>Send</b></button>
+        <button class="default" id="closebtn" data-dismiss="modal"><b>Close</b></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<div id="editModal" class="modal fade">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Employee Details</h4>
+      </div>
+      
+      <div class="modal-body">
+        <form class="form-horizontal">
+         
+         <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputName">Name</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputEditName" placeholder="Name" type="text">
+            </div>
+          </div>
+        
+         <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputAge">Age</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputEditAge" placeholder="Age" type="number">
+            </div>
+         </div>
+            
+          <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputGender">Gender</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputEditGender" placeholder="Gender" type="text">
+            </div>
+          </div>
+        
+         <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputCompany">Company</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputEditCompany" placeholder="Company name" type="text">
+            </div>
+         </div>
+
+           <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputEditEmail" placeholder="Email" type="email">
+            </div>
+          </div>
+        
+         <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputPhone">Phone</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputEditPhone" placeholder="Phone" type="text">
+            </div>
+         </div>                        
+         
+         <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputDate">DOB</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="inputEditDate" type="date">
+            </div>
+         </div>
+        
+    </form>
+      </div>
+      <div class="modal-footer">
+        <button class="button pull-left" id="updatebtn" type="submit" data-dismiss="modal"><b>Update</b></button>
+        <button class="button" id="closebtn" data-dismiss="modal"><b>Close</b></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- end modal content -->
+                               
+<div class="container-fluid">
+    <div class="head">
+    	<h1 id="heading">EMPLOYEE DATABASE</h1>
+
+
+    	<form>
+    		<input type="text" name="searchText" class="textClass" placeholder="enter name"><br>
+    		<button type="button" class="abcd"><b>SEARCH</b></button>
+            <br>
+            <button type="button" id="addbtn" data-toggle="modal" href="#myModal"><b>+ ADD RECORD</b></button>
+    	</form>
+    </div>
+</div>
+<div class="container-fluid">
+<div class="table-Section">
+	<table id="myTable" align="center">
+  <tr>
+    <td>EMP ID</td>
+    <td>NAME</td>
+    <td>AGE</td>
+    <td>GENDER</td>
+    <td>COMPANY</td>
+    <td>E-MAIL</td>
+    <td>PHONE</td>
+    <!-- <td>QUOTE</td> -->
+    <td>DOB</td>
+    <td>ACTION</td>
+  </tr>
+</table>
+</div>
+</div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+    window.jQuery || document.write('<script src="scripts/jquery-1.8.2.min.js"><\/script>')
+    </script>
+    <script src="scripts/crud_Script.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <!-- <script src="bootstrap.js"></script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+</body>
+</html>

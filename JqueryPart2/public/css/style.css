@@ -1,0 +1,108 @@
+.head{
+	text-align: center;
+	background-color: 	#008080;
+	margin: 0px;
+	padding: 20px;
+}
+#heading
+{
+	margin:0px;
+	padding: 10px;
+	color: cyan;
+}
+
+form .abcd
+{
+	width: 100px;
+	border-radius: 20px;
+	background-color:#00CD66;
+	border-color: black;
+	margin: 10px;
+}
+.textClass
+{
+	width: 400px;
+	border-radius: 20px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	border-color: black;
+	height: 50px;
+
+}
+
+
+.table-Section{
+	margin-top: 20px;
+}
+
+table,td
+{
+	border:1px solid black;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:30px;
+	padding-right:30px;
+	font-weight: bold;
+}
+
+.deletebtn
+{
+	height: auto;
+	width:100px;
+	border-radius: 20px;
+	background-color:#FF6A6A;
+	border-color: black;
+}
+
+ .editbtn
+ {
+ 	height: auto;
+	width:100px;
+	border-radius: 20px;
+	background-color: #FFA54F;
+	border-color: black;
+ }
+
+
+#addbtn
+{
+	width: 150px;
+	border-radius: 20px;
+	background-color:#00CD66;
+	border-color: black;
+	margin: 10px;
+}
+
+#closebtn , #sendbtn ,#updatebtn
+{
+	height: auto;
+	width:70px;
+	border-radius: 20px;
+	background-color: #00CD66;
+	border-color: black;
+}
+
+
+
+.btn:hover
+{
+	background-color:#EE2C2C;
+}
+
+.deletebtn:hover
+{
+	background-color: #FF4040;
+} 
+.editbtn:hover
+{
+	background-color:#FF6103;
+}
+
+.abcd:hover
+{
+	background-color: #00FF7F;
+}
+#addbtn:hover
+{
+	background-color: #00FF7F;
+}
