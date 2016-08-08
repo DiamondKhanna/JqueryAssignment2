@@ -1,0 +1,59 @@
+table
+{
+	border-collapse:collapse; 
+}
+ tr,td,th
+{
+	border:1px solid black;
+	
+}
+
+#searchbar
+{
+	text-align:center;
+	background-color: orange;
+	margin:0px;
+	margin-top:0px; 
+}
+
+#searchbtn,#addbtn,#previous,#next,.updatebtn,.deletebtn
+{
+	margin-top: 10px;
+	margin-bottom:10px;
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	border:10px;
+}
+#searchbox
+{
+	width: 400px;
+	margin-top: 10px;
+	padding-left: 20px;
+	height: 30px;
+	border-radius: 10px;
+	border:10px;
+}
+
+.table-Section{
+	margin-top: 20px;
+}
+table,th
+{
+	border:1px solid black;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:40px;
+	padding-right:30px;
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+h2
+{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 0px;
+	text-align:center;
+}

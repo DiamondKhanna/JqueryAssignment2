@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html ng-App="myModule">
+  
+  <head>
+    <title>Jquery2angular</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="javascripts/modernizr-2.6.2.min.js"></script>
+    <!--<link href="css/style.css" rel="stylesheet"> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript" src="javascripts/angular.js"></script>
+    <script type="text/javascript" src="javascripts/script.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+  </head>
+  
+  <body ng-controller="myController">
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Employee Details</h4>
+          </div>
+          
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputName">Name</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputName" placeholder="Name" type="text">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputAge">Age</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputAge" placeholder="Age" type="number">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputGender">Gender</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputGender" placeholder="Gender" type="text">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputCompany">Company</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputCompany" placeholder="Company name" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputPhone">Phone</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputPhone" placeholder="Phone" type="text">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputDate">DOB</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputDate" type="date">
+                </div>
+              </div>
+              
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="default pull-left" id="sendbtn" type="submit"  data-dismiss="modal" ng-click="create()"><b>Send</b></button>
+            <button class="default" id="closebtn" data-dismiss="modal"><b>Close</b></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="editModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Employee Details</h4>
+          </div>
+          
+          <div class="modal-body">
+            <form class="form-horizontal">
+              
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputName">Name</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputEditName" placeholder="Name" type="text">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputAge">Age</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputEditAge" placeholder="Age" type="number">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputGender">Gender</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputEditGender" placeholder="Gender" type="text">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputCompany">Company</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputEditCompany" placeholder="Company name" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputEditEmail" placeholder="Email" type="email">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputPhone">Phone</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputEditPhone" placeholder="Phone" type="text">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputDate">DOB</label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="inputEditDate" type="date">
+                </div>
+              </div>
+              
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="button pull-left" id="updatebtn" type="submit" data-dismiss="modal"><b>Update</b></button>
+            <button class="button" id="closebtn" data-dismiss="modal"><b>Close</b></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal content -->
+    
+    <div class="container-fluid">
+      <div class="head">
+        <h1 id="heading">EMPLOYEE DATABASE</h1>
+        <form>
+          <input type="text" name="searchText" class="textClass" placeholder="enter name" ng-model="search_value"><br>
+          <button type="button" class="abcd" ng-click=read()><b>SEARCH</b></button>
+          <br>
+          <button type="button" id="addbtn" data-toggle="modal" href="#myModal" ><b>+ ADD RECORD</b></button>
+        </form>
+      </div>
+    </div>
+    <div class="container-fluid">
+      
+      <div id="navigation">
+        <nav aria-label="Page navigation">
+          <ul class="pagination" id="navigationBtns">
+            <li>
+              <button aria-label="Previous" ng-click=previous() class="pull-left" id="previous">
+              <span aria-hidden="true">&laquo;</span>
+              </button>
+            </li>
+            <li>
+              <button aria-label="Next" ng-click=next() class="pull-right" id="next">
+              <span aria-hidden="true">&raquo;</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="table-Section">
+        <table id="myTable" align="center">
+          <thead>
+            <tr>
+              <th>EmployeeID</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>DOB</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="employee in employees">
+              <td>{{employee.emp_id}}</td>
+              <td>{{employee.name}}</td>
+              <td>{{employee.age}}</td>
+              <td>{{employee.gender}}</td>
+              <td>{{employee.email}}</td>
+              <td>{{employee.phone}}</td>
+              <td>{{employee.DOB}}</td>
+              <td><input type="button" name="update" class="updatebtn" value="update" data-toggle="modal" href="#editModal" ng-click=update(employee.id)><input type="button" class="deletebtn" name="delete" value="delete" ng-init="index=$index" ng-click=delete(employee.id,index)></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div id="navigation">
+        <nav aria-label="Page navigation">
+          <ul class="pagination" id="navigationBtns">
+            <li>
+              <button aria-label="Previous" ng-click=previous() class="pull-left" id="previous">
+              <span aria-hidden="true">&laquo;</span>
+              </button>
+            </li>
+            <li>
+              <button aria-label="Next" ng-click=next() class="pull-right" id="next">
+              <span aria-hidden="true">&raquo;</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+    </div>
+    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="javascripts/jquery-1.8.2.min.js"><\/script>')
+    </script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <!-- <script src="bootstrap.js"></script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript">
+    
+  </body>
+</html>
